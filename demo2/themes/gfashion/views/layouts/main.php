@@ -159,6 +159,7 @@
 						            array('label'=>'My Account', 'url'=>array('#')),
 									array('label'=>'My Wishlist', 'url'=>array('/site/cart')),
 									array('label'=>'Checkout', 'url'=>array('/site/checkout')),
+									array('label'=>'Admin', 'url'=>array('/shop/shop/admin'),'visible'=>!Yii::app()->user->isGuest),
 									array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 									array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 						            ),   

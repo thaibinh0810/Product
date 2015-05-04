@@ -7869,3 +7869,31 @@ Stack trace:
 #9 {main}
 REQUEST_URI=/demo2/index.php/shop/shop/admin
 ---
+2015/05/04 14:46:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\xampp\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\yii\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController(false)
+#3 C:\xampp\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\demo2\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo2/index.php
+HTTP_REFERER=http://localhost/demo2/index.php/site/login
+---
+2015/05/04 14:47:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "".' in C:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController(false)
+#1 C:\xampp\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo2\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo2/index.php
+---
+2015/05/04 14:47:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "".' in C:\xampp\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController(false)
+#1 C:\xampp\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo2\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo2/index.php
+HTTP_REFERER=http://localhost/demo2/index.php/site/login
+---

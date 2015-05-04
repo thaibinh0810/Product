@@ -51,6 +51,7 @@ class ShopController extends Controller
 
 	public function actionAdmin()
 	{
+		$this->layout='/layouts/shop';
 		$this->render('admin', array( ));
 	}
 
